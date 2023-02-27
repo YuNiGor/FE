@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #1ABC9C;
+    height: 70px;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+}
+.header-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+a:not(:last-child) {
+    margin-right: 20px;
+}
+.social-icon:not(:last-child) {
+    margin-right: 20px;
+}
+/* О нас*/
+.about {
+    display: flex;
+    align-items: center;
+}
+.about-img {
+    width: 50%;
+}
+.about-info {
+    padding: 65px;
+}
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+.about-descr {
+    font-size: 20px;
+    text-align: justify;
+}
+.projects {
+    background-color: #DCFFEB;
+    padding: 125px 0;
+    font-size: 25px;
+}
+h2 {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.projects-list {
+    display: flex;
+    gap: 35px;
+}
+.projects-item {
+    width: calc(100 / 3);
+}
+footer {
+    margin-top: 84px;
+    margin-bottom: 76px;
+}
+h3 {
+    font-family: Inter;
+    font-size: 35px;
+    margin-bottom: 55px;
+}
+.footer-info {
+display: flex;
+justify-content: space-between;
+}
+.footer-item {
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-title {
+    font-family: Oswald;
+    font-size: 24px;
+    text-align: center;
+    color: #999999;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.footer-descr {
+    font-family: Oswald;
+    font-size: 24px;
+    text-align: center;
+}
