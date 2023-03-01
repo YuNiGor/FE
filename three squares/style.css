@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.item, .item-1, .item-2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.item {
+    left: 50%;
+    top: 200px;
+    background-color: blue;
+}
+.item-1 {
+    top: 100px;
+    left: calc(50% - 100px);
+    background-color: green;
+
+}
+.item-2 {
+    top: 150px;
+    left: calc(50% - 50px);
+    background-color: red;
+    transition: 1s;
+}
+.item-2:hover {
+    transform: scale(1.5) rotate(45deg);
+}
