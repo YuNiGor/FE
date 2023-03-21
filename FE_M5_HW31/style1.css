@@ -1,0 +1,12 @@
+/* CSS код */
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+  }
+  
+  .blue {
+    background-color: blue;
+    z-index: 1;
+  }
+  
