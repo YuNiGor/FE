@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width: 1920px;
+}
+h1 {
+position: absolute;
+width: 734px;
+height: 171px;
+left: 593px;
+top: 192px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 500;
+font-size: 64px;
+line-height: 95px;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+/* White */
+color: #FFFFFF;
+}
+.main {
+    display: flex;
+    width: 450px;
+    border: 1px solid grey;
+    align-items: center;
+
+}

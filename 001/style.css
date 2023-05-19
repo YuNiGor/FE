@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    width: 450px;
+    border: 1px solid grey;
+    align-items: center;
+
+}
+
+.box {
+    width: 45px;
+    height: 45px;
+}
+
+.box1 {
+    background-color: red;
+}
