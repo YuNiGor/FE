@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+
+  color: #333;
+}
+
+a {
+  color: #007fc1;
+  text-decoration: none;
+}
+
+.helmet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #eaf5fe;
+  height: 32px;
+  font-size: 11px;
+}
+
+.helmet-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.helmet-title span {
+  margin: 0 4px;
+}
+
+.home-link {
+  color: #3F3F44;
+  display: flex;
+  align-items: center;
+
+}
+
+.home-link img {
+  margin-top: 4px;
+  margin-right: 8px;
+}
+
+
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header Styles */
+  
+  .header {
+    background-color: #3B2F63;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .header__logo {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .header__logo img {
+    height: 30px;
+  }
+  
+  .header__nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .header__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__item {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .button-primary {
+    background-color: #007fc1;
+    color: #fff;
+  }
+  
+  /* Main Styles */
+  
+  .main {
+    padding: 80px 0;
+  }
+  
+  .main__title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .main__description {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .buildpacks__search {
+    margin-bottom: 20px;
+  }
+  
+  .buildpacks__search label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .buildpacks__search input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .buildpacks__list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .buildpacks__list li {
+    margin-bottom: 20px;
+  }
+  
+  .container1 {
+    text-align: center;
+    color: #fff;
+    padding: 100px;
+  }
+
+
+
+
+
+
+
+  .buildpack__icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+  
+  .buildpack__icon img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .buildpack__content {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .buildpack__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .buildpack__description {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styles */
+  
+  .footer {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+  }
+  
+  .footer__left {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+  }
+  
+  .footer__left img {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__description {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .footer__item {
+    margin-bottom: 10px;
+    }
+    
+    .footer__item a {
+    color: #007fc1;
+    }
+    
+    .footer__right {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    vertical-align: middle;
+    }
+    
+    .footer__social {
+    display: inline-block;
+    margin-right: 10px;
+    }
+    
+    .footer__social img {
+    height: 30px;
+    }
+    
+    @media (max-width: 768px) {
+    .container {
+    padding: 0 10px;
+    }
+    
+    .header__logo {
+    margin-right: 10px;
+    }
+    
+    .header__nav {
+    display: block;
+    margin-top: 20px;
+    }
+    
+    .header__item {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+    
+    .buildpacks__search input[type="text"] {
+    font-size: 16px;
+    }
+    
+    .buildpack__icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    }
+    
+    .buildpack__title {
+    font-size: 20px;
+    }
+    
+    .buildpack__description {
+    font-size: 16px;
+    }
+    
+    .footer__left,
+    .footer__right {
+    width: 100%;
+    text-align: center;
+    }
+    
+    .footer__list {
+    text-align: center;
+    }
+    }
