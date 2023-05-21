@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    height: 82vh;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .image-container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 190px;
+    align-items: center;
+  }
+  
+  .title,
+  .text,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  .h3_servise,
+  .h3_item,
+  .h3_email,
+  .h3_contacts,
+  .h3_e-mail {
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .title {
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .block,
+  .services {
+    margin: auto;
+  }
+  
+  .block {
+    width: 1110px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;
+    background-color: #F7F7F7;
+    margin-top: 30px;
+  }
+  
+  .numbers_item,
+  .h2,
+  .h3,
+  .h4 {
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .numbers_item {
+    width: 190px;
+    height: 186px;
+    text-align: center;
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+  
+  .h2 {
+    color: #F7654A;
+    font-size: 72px;
+    font-style: normal;
+  }
+  
+  .h3 {
+    font-size: 36px;
+    font-style: normal;
+    color: #000000;
+  }
+  
+  .h4 {
+    color: #999999;
+    font-style: normal;
+    font-size: 18px;
+  }
+  
+  .h5 {
+    font-size: 48px;
+    padding-top: 30px;
+  }
+  
+  .main {
+    background-color: #ffffff;
+    padding: 200px;
+    text-align: center;
+  }
+  
+  .title1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #404149;
+  }
+  
+  .block1 {
+    margin: auto;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .arena {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+  
+  .rectangl4 {
+    padding-top: 45px;
+    padding-bottom: 15px;
+  }
+  
+  .font_color {
+    color: #404149;
+  }
+  
+  .textarea {
+    padding-top: 20px;
+  }
+  
+  .request {
+    background-color: #F7654A;
+  }
+  
+  .request_wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .request_textarea {
+    padding-top: 20px;
+    padding-bottom: 45px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+  }
+  
+  input {
+    width: 175px;
+    height: 49px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 14px;
+  }
+  
+  .main1 {
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .h3_servise {
+    font-size: 21px;
+    color: #404149;
+  }
+  
+  .dom {
+    padding-bottom: 30px;
+  }
+  
+  h6 {
+    font-size: 36px;
+    padding-top: 150px;
+    padding-bottom: 66px;
+  }
+  
+  .h3_email,
+  .h3_contacts,
+  .h3_e-mail {
+    font-size: 24px;
+  }
+  
+  .h3_email {
+    padding-top: 49px;
+  }
+  
+  .h3_contacts {
+    color: #F7654A;
+  }
+  
+  .footer {
+    width: 100%;
+    background-color: #404149;
+    margin-top: 60px;
+  }
+  
+  .footer_container {
+    max-width: 1110px;
+    height: 82px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .company,
+  .developed {
+    font-family: 'Open Sans';
+    color: #FFFFFF;
+  }
+  
