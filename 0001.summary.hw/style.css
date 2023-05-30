@@ -64,12 +64,13 @@ a {
   /* Header Styles */
   
   .header {
-    background-color: #504994;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
+    background-color: #504994;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
+  
   
   .header__logo {
     display: inline-block;
@@ -110,7 +111,9 @@ a {
     color: #fff;
   }
   
-
+  .container1 {
+    margin-top: 0;
+  }
   
   .wrapper {
     background-color: #EEF1F6;
@@ -159,193 +162,22 @@ a {
   }
   
   
-
-
-  /* Main Styles */
-  
-  .main {
-    padding: 80px 0;
-  }
-  
-  .main__title {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .main__description {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-  
-  .buildpacks__search {
-    margin-bottom: 20px;
-  }
-  
-  .buildpacks__search label {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .buildpacks__search input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .buildpacks__list ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .buildpacks__list li {
-    margin-bottom: 20px;
-  }
-  
-  .container1 {
-    text-align: center;
-    color: #fff;
-    padding: 100px;
+  #addons {
+    padding-top: 45px;
   }
 
+  #categorieslist {
+    position: fixed;
+    padding-top: 45px;
+    left: 0;
+    width: 200px; 
+    height: 100%; 
+  #addonslist {
+    margin-left: 200px; 
 
+  #categorieslist.sticky {
+    position: fixed;
+    top: 0;
+  }
 
-
-
-
-
-  .buildpack__icon {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
-    vertical-align: middle;
-  }
-  
-  .buildpack__icon img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .buildpack__content {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  .buildpack__title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .buildpack__description {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  /* Footer Styles */
-  
-  .footer {
-    background-color: #f2f2f2;
-    padding: 40px 0;
-  }
-  
-  .footer__left {
-    display: inline-block;
-    width: 50%;
-    vertical-align: middle;
-  }
-  
-  .footer__left img {
-    height: 30px;
-    margin-bottom: 10px;
-  }
-  
-  .footer__description {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .footer__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    }
-    
-    .footer__item {
-    margin-bottom: 10px;
-    }
-    
-    .footer__item a {
-    color: #007fc1;
-    }
-    
-    .footer__right {
-    display: inline-block;
-    width: 50%;
-    text-align: right;
-    vertical-align: middle;
-    }
-    
-    .footer__social {
-    display: inline-block;
-    margin-right: 10px;
-    }
-    
-    .footer__social img {
-    height: 30px;
-    }
-    
-    @media (max-width: 768px) {
-    .container {
-    padding: 0 10px;
-    }
-    
-    .header__logo {
-    margin-right: 10px;
-    }
-    
-    .header__nav {
-    display: block;
-    margin-top: 20px;
-    }
-    
-    .header__item {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 10px;
-    }
-    
-    .buildpacks__search input[type="text"] {
-    font-size: 16px;
-    }
-    
-    .buildpack__icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    }
-    
-    .buildpack__title {
-    font-size: 20px;
-    }
-    
-    .buildpack__description {
-    font-size: 16px;
-    }
-    
-    .footer__left,
-    .footer__right {
-    width: 100%;
-    text-align: center;
-    }
-    
-    .footer__list {
-    text-align: center;
-    }
-    }
+ 

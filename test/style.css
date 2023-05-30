@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Создание 3 столбцов с равной шириной */
+    gap: 10px; /* Расстояние между элементами */
+  }
+  
+  .grid-item {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
