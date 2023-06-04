@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Element Creation</title>
+    <style>
+      /* CSS стили для элемента */
+      .custom-element {
+        background-color: yellow;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="elementInput" placeholder="Введите элемент">
+    <input type="text" id="classInput" placeholder="Введите класс">
+    <button id="createButton">Создать элемент</button>
+
+    <div id="container"></div>
+
+    <input type="text" id="widthInput" placeholder="Введите ширину">
+    <input type="text" id="heightInput" placeholder="Введите высоту">
+    <button id="applyStylesButton">Применить стили</button>
+
+    <script>
+      const createButton = document.getElementById("createButton");
+      createButton.addEventListener("click", () => {
+        const elementName = document.getElementById("elementInput").value;
+        const elementClass = document.getElementById("classInput").value;
+
+        const newElement = document.createElement(elementName);
+        newElement.classList.add(elementClass);
+
+        document.getElementById("container").appendChild(newElement);
+      });
+
+      const applyStylesButton = document.getElementById("applyStylesButton");
+      applyStylesButton.addEventListener("click", () => {
+        const width = document.getElementById("widthInput").value;
+        const height = document.getElementById("heightInput").value;
+
+        const element = document.getElementById("container").lastChild;
+        element.style.width = width + "px";
+        element.style.height = height + "px";
+      });
+    </script>
+  </body>
+</html>
