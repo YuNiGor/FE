@@ -1,0 +1,22 @@
+.container {
+    margin: 20px;
+  }
+  
+  .user-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .user {
+    margin-bottom: 10px;
+  }
+  
+  .posts {
+    margin-top: 10px;
+  }
+  
+  .item {
+    margin-bottom: 5px;
+  }
+  
