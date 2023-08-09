@@ -7,12 +7,13 @@ body {
     max-width: 1920px;
     align-items: center;
     flex-direction: column;
+    background-color: #333333;
   }
   
   
   header {
     background-color: #fff;
-    max-width: 1920px;
+    width: 100%;
   }
   
   .header-container {
@@ -52,6 +53,7 @@ body {
   }
   
   .section1 {
+    width: 100%;
     position: relative;
     background-image: url(images/section1.png);
     background-size: cover;
@@ -60,7 +62,7 @@ body {
   }
   
   .slider-container {
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -79,39 +81,51 @@ body {
   }
   
   .slide-content {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    max-width: 600px;
+    margin-top: 150px;
     color: #fff;
   }
   
   .slide-content h2 {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: 'Merriweather', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 66px;
+    
+    color: #FFFFFF;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   
   .presentation-button {
+    width: 270px;
+    padding: 15px 0 17px 0;
     display: inline-block;
-    padding: 10px 20px;
     background-color: #005FA3;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 40px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
   }
   
   .slider-controls {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    max-width: 1110px;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
   }
   
   .circle-nav {
     display: flex;
-    gap: 10px;
+    gap: 50px;
   }
   
   .circle {
@@ -128,24 +142,35 @@ body {
   
   .arrow-nav {
     display: flex;
-    gap: 10px;
   }
   
-  .arrow {
-    width: 20px;
-    height: 20px;
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
+
+.arrow {
+    align-items: center;
     cursor: pointer;
+    padding: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
   }
-  
-  .arrow.prev {
-    transform: rotate(135deg);
-  }
-  
-  .arrow.next {
-    transform: rotate(-45deg);
-  }
+
+.arrow.prev {
+    background-image: url(/images/prev.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrow.next {
+    background-image: url(/images/next.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrow:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
   
   
   /* Section 2 */
@@ -153,17 +178,23 @@ body {
 
 .section2 {
     background-color: #EBEBEB;
-    width: 1110px;
+    width: 100%;
     margin: 0 auto;
-    padding: 30px 0;
+    display: flex;
+    justify-content: center;
   }
   
+  .container {
+    max-width: 1110px;
+
+  }
+
   .section2 h2 {
     color: #BDBDBD;
   }
   
   .specialization {
-    font-family: 'Merriweather';
+    font-family: 'Merriweather', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
@@ -173,19 +204,21 @@ body {
     margin-bottom: 20px;
   }
   
-.service-links {
+  .service-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-  .service-link {
+.service-link {
     width: 350px;
     margin-bottom: 20px;
     width: fit-content; 
-  }
-  
-  .image-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.image-container {
     width: 350px;
     height: 350px;
     background-size: cover;
@@ -193,20 +226,31 @@ body {
     position: relative;
     transition: opacity 0.3s ease;
     background-image: url(./images/service1.png);
-  }
-  
-  .service-link:hover .image-container {
-    opacity: 0.8;
-    background: linear-gradient(0deg, rgba(2, 102, 224, 0.8), rgba(4, 111, 243, 0.8));
-  }
-  
+}
 
-  .text-overlay {
+.service-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 102, 224, 0);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.service-link:hover::before {
+    background-color: rgba(2, 102, 224, 0.4);
+}
+
+.text-overlay {
     position: absolute;
     bottom: 20px;
     left: 20px;
     color: #FFFFFF;
     font-size: 18px;
     font-weight: bold;
-  }
-  
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}

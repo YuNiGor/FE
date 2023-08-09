@@ -29,8 +29,20 @@ function prevSlide() {
   showSlide(currentSlideIndex);
 }
 
+function goToSlide(index) {
+  currentSlideIndex = index;
+  showSlide(currentSlideIndex);
+}
+
 document.querySelector('.arrow.next').addEventListener('click', nextSlide);
 document.querySelector('.arrow.prev').addEventListener('click', prevSlide);
 
+circles.forEach((circle, index) => {
+  circle.addEventListener('click', () => {
+    goToSlide(index);
+  });
+});
+
 showSlide(currentSlideIndex);
+
 
