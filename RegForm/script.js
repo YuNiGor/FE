@@ -36,11 +36,13 @@ function checkAuthorization() {
     statusButtons.forEach((button) => {
       button.style.display = "inline-block";
     });
+    logoutButton.style.display = "inline-block";
   } else {
     createOrderForm.style.display = "none";
     statusButtons.forEach((button) => {
       button.style.display = "none";
     });
+    logoutButton.style.display = "none";
   }
 }
 
