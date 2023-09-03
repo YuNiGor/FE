@@ -1,48 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
+import MenuItem1 from './MenuItem1';
+import MenuItem2 from './MenuItem2';
+import MenuItem3 from './MenuItem3';
+import MenuItem4 from './MenuItem4';
+import MenuItem5 from './MenuItem5';
 
 function NavigationMenu() {
-  const [menuState, setMenuState] = useState({
-    home: false,
-    about: false,
-    services: false,
-  });
-
-  const handleMenuItemClick = (menuItem) => {
-    const updatedMenuState = { ...menuState };
-
-    updatedMenuState[menuItem] = !updatedMenuState[menuItem];
-
-    for (const key in updatedMenuState) {
-      if (key !== menuItem) {
-        updatedMenuState[key] = false;
-      }
-    }
-
-    setMenuState(updatedMenuState);
-  };
-
   return (
-    <div className="navigation-menu">
-      <ul>
-        <li
-          className={menuState.home ? 'active' : ''}
-          onClick={() => handleMenuItemClick('home')}
-        >
-          Главная
-        </li>
-        <li
-          className={menuState.about ? 'active' : ''}
-          onClick={() => handleMenuItemClick('about')}
-        >
-          О нас
-        </li>
-        <li
-          className={menuState.services ? 'active' : ''}
-          onClick={() => handleMenuItemClick('services')}
-        >
-          Услуги
-        </li>
-      </ul>
+    <div>
+      <h1>Навигационное меню</h1>
+      <MenuItem1 />
+      <MenuItem2 />
+      <MenuItem3 />
+      <MenuItem4 />
+      <MenuItem5 />
     </div>
   );
 }
